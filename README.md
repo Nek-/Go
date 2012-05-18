@@ -5,10 +5,21 @@ Go is a easy-to-use PHP deployment manager
 
 Go is under heavy development and it's probably a very bad idea to use it for your killer mega huge application ;)
 
-Init
------
+Installation
+------------
+This tool is experimental, so there is no installation process for now.
 
-This tool is experimental, so there is no installation process for now. Git clone it and `ln -vs` the go executable in your path.
+You must clone the application and link it to your path:
+```bash
+$ cd
+$ git clone git@github.com:Nek-/Go.git
+$ sudo ln -vs ~/Go/go /usr/bin/go
+$ sudo chmod +x ~/Go/go
+```
+
+Init
+----
+
 
     $ go init [config dir]
 
@@ -17,12 +28,14 @@ This will create all the files needed by go to deploy your application.
 Config
 ------
 
-Edit the deploy.yml and Deploy.php files in your config dir (config/go by default)
+Edit the deploy.yml and Deploy.php files in your config dir (config/go by default).
 
 Usage
 -----
 
     $ go deploy [environment] [--go]
+
+Use the [--go] option to process to the real deployment.
 
 Deployment strategies
 ---------------------
